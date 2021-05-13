@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "d0d699b4-64c2-4810-9b6c-d6d8321335be",
+		"name": "TODOAPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RequestUser",
+			"item": [
+				{
+					"name": "GET-All-User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA5YzZkNTU2MDY3NmUwOTJmYTM5MDY2In0sImlhdCI6MTYyMDg2NDM0NiwiZXhwIjoxNjIxMjI0MzQ2fQ.DtSKcq2imf03X7pYJvMvIcdpMHOFSRGyFnJVIGGJYjs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"name\":\"Tareq\",\n     \"avatar\":\"Users/naeemetmah/Desktop/UY9gtAO.jpeg\",\n     \"email\":\"Tareq@gmail.com\",\n     \"password\":\"9876543\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users?Content-Type=application/json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "RequestProfile",
+			"item": [
+				{
+					"name": "GetAll-Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getprofile-user_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/profile/user/609c6913de447a08d0f03cdc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"user",
+								"609c6913de447a08d0f03cdc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA5YWViMzJhMTNkYjIzNjljNDZhNGU4In0sImlhdCI6MTYyMDc2NjIxMiwiZXhwIjoxNjIxMTI2MjEyfQ.ngoGEtQSo5ahYZ-QRUZh2nzvsycUtCTw7kLvi0_Mn88",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"title\":\"yyy\",\n     \"description\":\"mmm\",\n     \"createBy\":\"mmm\"\n     \n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProfile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY5M2NkMDg3OTI2NTEzNjQ4YTIxY2IwIn0sImlhdCI6MTYwMzUyMTgwMSwiZXhwIjoxNjAzODgxODAxfQ.scae2JHSlArHmmetQPIuoxCe7T2s16OUs7CRpP8bib8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/profile/609c6913de447a08d0f03cdc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"609c6913de447a08d0f03cdc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "NaeemEt",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "Naeem99ne",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
