@@ -1,0 +1,12 @@
+{
+    "mongoURI": "mongodb+srv://Naeem:Naeem@cluster0.rqbgr.mongodb.net/Naeem?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId":"a82ab8d59466a23bffe7",
+    "githubSecret":"9eebfb298947e4b1aead7f564d8228134200bc21"
+  }
+  
+
+
+
+
+

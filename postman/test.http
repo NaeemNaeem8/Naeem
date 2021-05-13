@@ -1,0 +1,56 @@
+//for add new user
+# POST  http://localhost:3000/api/users
+# Content-Type: application/json
+
+
+
+
+//for check token is valid
+# GET   http://localhost:3000/api/auth
+# x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA5YWViMzJhMTNkYjIzNjljNDZhNGU4In0sImlhdCI6MTYyMDc2NjIxMiwiZXhwIjoxNjIxMTI2MjEyfQ.ngoGEtQSo5ahYZ-QRUZh2nzvsycUtCTw7kLvi0_Mn88
+
+# POST  http://localhost:3000/api/auth
+# Content-Type: application/json
+
+# {
+#     "email":"naeem@gmail.com",
+#     "password":"123456"
+# }
+
+# POST  http://localhost:3000/api/auth
+# Content-Type: application/json
+
+# {
+#     "email":"zidan@gmail.com",
+#     "password":"123456"
+# }
+
+
+//for get all user
+# GET   http://localhost:3000/api/users
+
+//-------------------------------------------------------------------------------*/
+//for add or update profile
+# POST  http://localhost:3000/api/profile
+# Content-Type: application/json
+# x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA5YWViMzJhMTNkYjIzNjljNDZhNGU4In0sImlhdCI6MTYyMDc2NjIxMiwiZXhwIjoxNjIxMTI2MjEyfQ.ngoGEtQSo5ahYZ-QRUZh2nzvsycUtCTw7kLvi0_Mn88
+
+
+
+# POST  http://localhost:3000/api/profile
+# Content-Type: application/json
+# x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA5YzAxMjk5MzE0ZWEyN2MwZDQ3NDRkIn0sImlhdCI6MTYyMDgzNjY1MSwiZXhwIjoxNjIxMTk2NjUxfQ.dsOZxO2HjopSb0F2ID8ve0VPrpozanAdo57P8mBLDEA
+
+
+
+//for show all profiles
+# GET   http://localhost:3000/api/profile
+
+//get profile on user_id
+# GET   http://localhost:3000/api/profile/user/609aeb32a13db2369c46a4e8
+
+
+
+//for Delete user,profile 
+# DELETE    http://localhost:3000/api/profile
+# x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY5M2NkMDg3OTI2NTEzNjQ4YTIxY2IwIn0sImlhdCI6MTYwMzUyMTgwMSwiZXhwIjoxNjAzODgxODAxfQ.scae2JHSlArHmmetQPIuoxCe7T2s16OUs7CRpP8bib8
